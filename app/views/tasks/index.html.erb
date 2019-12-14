@@ -4,7 +4,7 @@
             <h1>TO-DO APP</h1>
             <div class="">
                 <%= bootstrap_form_with scope: :task, url: tasks_path, :class => "form-inline" do |f| %>
-                    <%= f.text_field :name, :size=>"70", placeholder: "Add new task", skip_label: true %>
+                    <%= f.text_field :name, :size=>"70", placeholder: "Add new task", skip_label: true, required: true %>
                     <%= f.submit "Add Task", class: "btn btn-primary" %>
                 <% end %>
             </div>
