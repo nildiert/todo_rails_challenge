@@ -9,45 +9,56 @@
                 <% end %>
             </div>
         
-            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-                <div class="">
-                    <h3 class="text-secondary">INCOMPLETED TASKS</h3>
-                        <ol class="list-group">
-                        <% @tasks.each do |task| %>
-                            <% if task.status == false %>
-                                <li class="list-group-item clearfix text-left">
-                                    <div class="inline" style="margin-top: 6px;">
-                                        <%= task.name.capitalize %>
-                                    </div>
-                                    <div class="inline pull-right">
-                                        <%= link_to 'Completed!', task, method: :put, class: "btn btn-success" %>
-                                    </div>
-                                </li>
+            
+            <% if @tasks.count > 0 %>
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                    <div class="">
+                        <h3 class="text-secondary">INCOMPLETED TASKS</h3>
+                            <ol class="list-group">
+                            
+                            <% @tasks.each do |task| %>
+                                <% if task.status == false %>
+                                    <li class="list-group-item clearfix text-left">
+                                        <div class="inline" style="margin-top: 6px;">
+                                            <%= task.name.capitalize %>
+                                        </div>
+                                        <div class="inline pull-right">
+                                            <%= link_to 'Completed!', task, method: :put, class: "btn btn-success" %>
+                                        </div>
+                                    </li>
+                                <% end %>
                             <% end %>
-                        <% end %>
-                        </ol>
+                            </ol>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-                <div class="">
-                    <h3 class="text-secondary">COMPLETED TASKS</h3>
-                        <ol class="list-group ">
-                        <% @tasks.each do |task| %>
-                            <% if task.status == true %>
-                                <li class="list-group-item text-left clearfix">
-                                    <div class="inline" style="margin-top: 6px;">
-                                        <%= task.name.capitalize %>
-                                    </div>
-                                    <div class="inline pull-right">
-                                        <%= link_to 'Delete', task, method: :delete, class: "btn btn-danger pull-right" %>
-                                        <%= link_to 'Incompleted!', task, method: :put, class: "btn btn-info pull-right", style: style="margin-right: 5px;" %>
-                                    </div>
-                                </li>
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                    <div class="">
+                        <h3 class="text-secondary">COMPLETED TASKS</h3>
+                            <ol class="list-group ">
+                            <% @tasks.each do |task| %>
+                                <% if task.status == true %>
+                                    <li class="list-group-item text-left clearfix">
+                                        <div class="inline" style="margin-top: 6px;">
+                                            <%= task.name.capitalize %>
+                                        </div>
+                                        <div class="inline pull-right">
+                                            <%= link_to 'Delete', task, method: :delete, class: "btn btn-danger pull-right" %>
+                                            <%= link_to 'Incompleted!', task, method: :put, class: "btn btn-info pull-right", style: style="margin-right: 5px;" %>
+                                        </div>
+                                    </li>
+                                <% end %>
                             <% end %>
-                        <% end %>
-                        </ol>
+                            </ol>
+                    </div>
                 </div>
-            </div>
+            <% else %>
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                    <div class="">
+                        <h3 class="text-secondary">You don't have tasks</h3>
+                    </div>
+                </div>
+            <% end %>
+
         </div>
     </div>
 </div>
