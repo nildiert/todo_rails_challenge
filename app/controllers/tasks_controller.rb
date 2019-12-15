@@ -7,20 +7,13 @@ class TasksController < ApplicationController
       @task = Task.new(task_params)
       if @task.save
         redirect_to root_path
-      else
-        redirect_to root_path
       end
     end
   
   
     def update
       @task = Task.find(params[:id])
-      if @task.status
-        @task.status = false
-      else
-        @task.status = true
-      end
-       
+      @task.status = !@task.status
       @task.save
       redirect_to root_path
     end
