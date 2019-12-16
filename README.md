@@ -23,7 +23,7 @@ Simple ToDo app in Rails to apply for the position of Junior Software Developer
     * status (boolean)
 
 
-## instructions to install
+## Instructions to install
 
 ### Clone the repository
 
