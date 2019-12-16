@@ -5,6 +5,8 @@ Simple ToDo app in Rails to apply for the position of Junior Software Developer
 ![Image](https://raw.githubusercontent.com/nildiert/todo_rails_challenge/master/pics/todo_with_tasks.png)
 ![Image](https://raw.githubusercontent.com/nildiert/todo_rails_challenge/master/pics/you_dont_have_task.png)
 
+## Versions
+
 * Ruby versión
 
 `ruby '2.5.7'`
@@ -12,6 +14,14 @@ Simple ToDo app in Rails to apply for the position of Junior Software Developer
 * Rails versión
 
 `'rails', '~> 5.2.0'`
+
+
+## Entities
+
+  * **Task**
+    * name (string)
+    * status (boolean)
+
 
 ## instructions to install
 
@@ -26,16 +36,15 @@ Simple ToDo app in Rails to apply for the position of Junior Software Developer
 
 
 ### Run the container
-`docker-compose up`
 
-`docker-compose up -d`
+`docker-compose build`
 
-## Entities
+`docker-compose up` or `docker-compose up -d`
 
-  * **Task**
-    * name (string)
-    * status (boolean)
+## Testing
+
+Run RSpec tests with `docker-compose run --rm web rspec`
 
 
 ## Changelog
-* 14-Dec-2019 Creación
+* 14-Dec-2019 Creation
