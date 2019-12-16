@@ -2,10 +2,14 @@
 
 Simple ToDo app in Rails to apply for the position of Junior Software Developer
 
-[Demo](https://todo-rails-challenge.herokuapp.com/)
 
 ![Image](https://raw.githubusercontent.com/nildiert/todo_rails_challenge/master/pics/todo_with_tasks.png)
 ![Image](https://raw.githubusercontent.com/nildiert/todo_rails_challenge/master/pics/you_dont_have_task.png)
+
+## Demo version
+
+[Click here!](https://todo-rails-challenge.herokuapp.com/)
+
 
 ## Versions
 
