@@ -32,7 +32,12 @@ Simple ToDo app in Rails to apply for the position of Junior Software Developer
 
 ### Clone the repository
 
-`git clone https://github.com/nildiert/rails5-docker.git && cd rails5-docker`
+`git clone https://github.com/nildiert/todo_rails_challenge.git.git && cd todo_rails_challenge
+
+
+### Change the files owner
+
+`sudo chown $USER:$USER -R .`
 
 
 ### Create the database
