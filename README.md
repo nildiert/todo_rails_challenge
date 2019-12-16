@@ -1,8 +1,8 @@
-# DOCKER-COMPOSE RAILS 5
+# Todo Rails Challenge
 
-No mueran en su miserable intento de trabajar con una versión estable de rails 5 con docker y que despliegue en Heroku sin problemas, yo ya morí por ustedes. Clonen este repositorio y ajá!
+Simple ToDo app in Rails to apply for the position of Junior Software Developer
 
-![Image](https://www.freecodecamp.org/news/content/images/2019/08/image-136-2.png)
+![Image](https://images-na.ssl-images-amazon.com/images/I/51NvZiQtk6L._SY355_.png)
 
 * Ruby versión
 
@@ -12,49 +12,29 @@ No mueran en su miserable intento de trabajar con una versión estable de rails 
 
 `'rails', '~> 5.2.0'`
 
-## Instrucciones para dummies y mancos ...
+## instructions to install
 
-### Clonar el repositorio
+### Clone the repository
 
 `git clone https://github.com/nildiert/rails5-docker.git && cd rails5-docker`
 
 
-### Cambiar propietario de usuario (Solo haganlo y ya)
-
-`sudo chown $USER:$USER -R .`
-
-
-### Crear la base de datos
+### Create the database
 
 `docker-compose run --rm web rails db:create`
 
 
-### Correr el contenedor
+### Run the container
 `docker-compose up`
 
 `docker-compose up -d`
 
+## Entities
 
-
-### Ejecutar comandos de rails
-
-`docker-compose run --rm web rails generate model User name:string status:boolean`
-
-`docker-compose run --rm web rails db:migrate`
-
+  * **Task**
+    * name (string)
+    * status (boolean)
 
 
 ## Changelog
 * 14-Dec-2019 Creación
-
-
-
-
-## Agradecimientos
-* [Agradecimientos especiales](https://lmgtfy.com/?q=A+t%C3%AD+cosita!!)
-
-
-
-
-## Correcciones, fallos y sugerencias (DM)
-[![Twitter](https://img.icons8.com/clouds/2x/twitter.png)](https://twitter.com/nildiert)
