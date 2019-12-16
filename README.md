@@ -49,11 +49,10 @@ Simple ToDo app in Rails to apply for the position of Junior Software Developer
 
 `docker-compose build`
 
+`docker-compose run --rm web rails db:migrate`
+
 `docker-compose up`
 
-### Run the migrations
-
-`docker-compose run --rm web rails db:migrate`
 
 ### Open your browser
 
