@@ -38,7 +38,7 @@
                                 <% if task.status == true %>
                                     <li class="list-group-item text-left clearfix">
                                         <div class="inline" style="margin-top: 6px;">
-                                            <%= task.name.capitalize %>
+                                           <strike><%= task.name.capitalize %></strike>
                                         </div>
                                         <div class="inline pull-right">
                                             <%= link_to 'Delete', task, method: :delete, class: "btn btn-danger pull-right" %>
