@@ -32,7 +32,7 @@ Simple ToDo app in Rails to apply for the position of Junior Software Developer
 
 ### Clone the repository
 
-`git clone https://github.com/nildiert/todo_rails_challenge.git.git && cd todo_rails_challenge
+`git clone https://github.com/nildiert/todo_rails_challenge.git.git && cd todo_rails_challenge`
 
 
 ### Change the files owner
